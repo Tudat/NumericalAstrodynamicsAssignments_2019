@@ -1,0 +1,87 @@
+{
+    "initialEpoch": XXXX,
+    "finalEpoch": XXXX,
+    "globalFrameOrigin": "Ganymede",
+    "globalFrameOrientation": "ECLIPJ2000",
+    "spice": {
+        "useStandardKernels": true
+    },
+    "bodies": {
+        "Ganymede": {
+            "useDefaultSettings": true,
+            "atmosphere": {
+                "densityScaleHeight": 40E3,
+                "constantTemperature": 290,
+                "densityAtZeroAltitude": 2E-9,
+                "type": "exponential"
+            }
+        },        
+        "JUICE": {
+            "ephemeris":
+            {
+                "type": "directSpice",
+                "frameOrigin": "Ganymede",
+                "frameOrientation": "ECLIPJ2000"
+            },
+            "aerodynamics": {
+                   "forceCoefficients": [
+                       1.5,
+                       0,
+                       0
+                   ]
+               },
+	    XXXX,
+            XXXX
+        }
+    },
+    "propagators": [
+        {
+            "bodiesToPropagate": [
+                XXXX
+            ],
+            "centralBodies": [
+                XXXX
+            ],
+            "accelerations": {
+                "JUICE": {
+                    "Ganymede": [
+                        {
+                            XXXX,
+                            XXXX,
+                            XXXX		
+                        },
+                        {
+                            "type": "aerodynamic"
+                        }
+                    ]                    
+                }
+            }
+            
+        }
+    ],
+    "integrator": {
+        "type": "rungeKutta4",
+        "stepSize": 10
+    },
+    "export": [
+        {
+            "file": "dependent_variables_Q1.dat",
+            "variables": [
+                {
+                    "body": "JUICE",
+                    "dependentVariableType": "keplerElements",
+                    "relativeToBody": "Ganymede"
+                }
+            ]
+        },
+        {
+            "file": "propagated_state_Q1.dat",
+            "variables": [
+                {
+                    "type": "state"
+                }
+            ]
+        }
+    ],
+    "printVariableTypes": true
+}

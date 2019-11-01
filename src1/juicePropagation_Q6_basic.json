@@ -1,0 +1,73 @@
+{
+    "initialEpoch": XXXX,
+    "finalEpoch": XXXX,
+    "globalFrameOrigin": "Ganymede",
+    "globalFrameOrientation": "ECLIPJ2000",
+    "spice": {
+        "useStandardKernels": true
+    },
+    "bodies": {
+        "Ganymede": {
+            "useDefaultSettings": true
+        },
+        "Jupiter": {
+            "useDefaultSettings": true
+        },
+        "JUICE": {
+            "ephemeris":
+            {
+                "type": "directSpice",
+                "frameOrigin": "Ganymede",
+                "frameOrientation": "ECLIPJ2000"
+            }
+        }
+    },
+    "propagators": [
+        {
+            "bodiesToPropagate": [
+                "JUICE",
+                "Ganymede"
+            ],
+            "centralBodies": [
+                "Ganymede",
+                "Jupiter"
+            ],
+            "accelerations": {
+                "JUICE": {
+                    "Ganymede": [
+                        {
+                            "type": "pointMassGravity"
+                        }
+                    ],
+                    "Jupiter": [
+                        {
+                            "type": "pointMassGravity"
+                        }
+                    ]
+                },
+                "Ganymede": {
+                    "Jupiter": [
+                        {
+                            "type": "pointMassGravity"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "integrator": {
+        "type": "rungeKutta4",
+        "stepSize": 10
+    },
+    "export": [
+        {
+            "file": "propagated_state_Q6.dat",
+            "variables": [
+                {
+                    "type": "state"
+                }
+            ]
+        }
+    ],
+    "printVariableTypes": true
+}
