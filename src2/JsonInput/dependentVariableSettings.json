@@ -1,0 +1,17 @@
+[
+      {
+        "body": "Spacecraft",
+        "dependentVariableType": "relativeDistance",
+        "relativeToBody": "Earth"
+      },
+      {
+         "body": "Spacecraft",
+         "dependentVariableType": "relativeDistance",
+         "relativeToBody": "Mars"
+       },
+      {
+         "body": "Sun",
+         "dependentVariableType": "relativeDistance",
+         "relativeToBody": "SSB"
+       }
+    ]

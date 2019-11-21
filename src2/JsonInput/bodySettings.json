@@ -1,0 +1,32 @@
+{
+    "Sun": {
+      "useDefaultSettings": true
+    },
+    "Venus": {
+      "useDefaultSettings": true
+    },
+    "Earth": {
+      "useDefaultSettings": true
+    },
+    "Moon": {
+      "useDefaultSettings": true
+    },
+    "Mars": {
+      "useDefaultSettings": true
+    },
+    "Jupiter": {
+      "useDefaultSettings": true
+    },
+    "Saturn": {
+      "useDefaultSettings": true
+    },
+    "Spacecraft": {
+            "mass": 1000,
+            "referenceArea": 20,
+            "radiationPressure": {
+                "Sun": {
+                    "radiationPressureCoefficient": 1.2
+                }
+            }
+    }
+}

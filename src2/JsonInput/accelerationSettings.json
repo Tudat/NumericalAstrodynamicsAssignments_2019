@@ -1,0 +1,9 @@
+{
+   "Spacecraft": {
+       "Sun": [
+           {
+               "type": "pointMassGravity"
+           }
+       ]		
+   }
+}

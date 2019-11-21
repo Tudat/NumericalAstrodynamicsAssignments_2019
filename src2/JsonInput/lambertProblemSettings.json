@@ -1,0 +1,16 @@
+{
+  "bodies": "$(bodySettings)",
+  "integrator": "$(integrationSettings)",
+  "spice": "$(spiceSettings)",
+  "accelerations": "$(accelerationSettings)",
+  "dependentVariableSettings": "$(dependentVariableSettings)",
+  "departureEpoch": XXXX,
+  "arrivalEpoch": XXXX,
+  "targetBody": XXXX,
+  "globalFrameOrigin": "SSB",
+  "globalFrameOrientation": "ECLIPJ2000",
+  "runQuestion1": true,
+  "runQuestion2": false,
+  "runQuestion3": false,
+  "runQuestion4": false
+}
