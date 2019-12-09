@@ -109,8 +109,8 @@ int main( )
                         "Q2a" + std::to_string( i ), true  );
 
 
-            //! STUDENT CODE TASK: propagate trajectory forward/backward from midpoint (for case iii only, see question 2b)
-            if( i == 2 )
+            //! STUDENT CODE TASK: propagate trajectory forward/backward from midpoint (for case ii only, see question 2b)
+            if( i == 1 )
             {
                 //! Propagate forward from midpoint
                 //propagateTrajectory( ... );
