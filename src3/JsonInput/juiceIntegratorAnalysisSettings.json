@@ -1,0 +1,13 @@
+{
+    "bodies": "$(bodySettings)",
+    "spice": "$(spiceSettings)",
+    "globalFrameOrigin": "Jupiter",
+    "globalFrameOrientation": "ECLIPJ2000",
+    "flybyInitialTime": XXXX,
+    "orbitInitialTime": XXXX,
+    "runQuestion1": true,
+    "runQuestion2": false,
+    "runQuestion3": false,
+    "runQuestion4": false
+
+}

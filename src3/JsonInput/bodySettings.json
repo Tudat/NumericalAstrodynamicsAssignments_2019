@@ -1,0 +1,51 @@
+{
+    "Sun": {
+        "useDefaultSettings": true
+    },
+    "Jupiter": {
+        "useDefaultSettings": true
+    },
+    "Ganymede": {
+        "useDefaultSettings": true,
+        "atmosphere": {
+            "densityScaleHeight": 40E3,
+            "constantTemperature": 290,
+            "densityAtZeroAltitude": 2E-9,
+            "type": "exponential"
+        }
+    },
+    "Callisto": {
+        "useDefaultSettings": true
+    },
+    "Io": {
+        "useDefaultSettings": true
+    },    
+    "Europa": {
+        "useDefaultSettings": true
+    },
+    "Saturn": {
+        "useDefaultSettings": true
+    },
+    "JUICE": {
+        "ephemeris":
+        {
+            "type": "directSpice",
+            "frameOrigin": "Ganymede",
+            "frameOrientation": "ECLIPJ2000"
+        },
+        "aerodynamics": {
+            "forceCoefficients": [
+                1.5,
+                0,
+                0
+            ]
+        },
+        "mass": 2000,
+        "referenceArea": 100,
+        "radiationPressure": {
+             "Sun": {
+                 "radiationPressureCoefficient": 1.2
+             }
+         }
+    }
+}
