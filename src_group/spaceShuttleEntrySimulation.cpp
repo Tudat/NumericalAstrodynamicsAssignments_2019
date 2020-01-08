@@ -58,10 +58,10 @@ public:
         // Retrieve Apollo flight conditions, and store as member variable
         vehicleFlightConditions_ =
                 std::dynamic_pointer_cast< aerodynamics::AtmosphericFlightConditions >(
-                    bodyMap.at( "Apollo" )->getFlightConditions( ) );
+                    bodyMap.at( "STS" )->getFlightConditions( ) );
 
         // Retrieve Apollo coefficient interface, and store as member variable
-        coefficientInterface_ = bodyMap.at( "Apollo" )->getAerodynamicCoefficientInterface( );
+        coefficientInterface_ = bodyMap.at( "STS" )->getAerodynamicCoefficientInterface( );
 
         ////                                                                                               ////
         ////    Retrieve any additional relevant objects from environment and set as member variables      ////
